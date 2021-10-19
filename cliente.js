@@ -2,8 +2,9 @@
 /**
  * endpoint de categoria
  */
-//const endpointcliente = "http://150.230.77.129:8080/api/Client"
-const endpointcliente = "http://localhost:8080/api/Client"
+//const endpointcliente = "http://localhost:8080/api/Client"
+const endpointcliente = "http://150.230.77.129:8080/api/Client"
+
 
 /**
  * variables del fomulario

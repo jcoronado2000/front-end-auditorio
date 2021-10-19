@@ -1,7 +1,8 @@
 /**
  * endpont de audience
  */
-const endpointadiencia = "http://localhost:8080/api/Audience"
+//const endpointadiencia = "http://localhost:8080/api/Audience"
+const endpointadiencia = "http://150.230.77.129:8080/api/Audience"
 
 function jsonAuditorio() {
     const auditoriodata = {
