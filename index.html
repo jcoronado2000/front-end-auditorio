@@ -21,33 +21,23 @@
     <br>
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 text-center">
                 <!-- Button Crear Categoria -->
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#crearcategoria">
                     Crear Categoria
                 </button>
-                <!-- Button Eliminar Categoria -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                    data-bs-target="#eliminarcategoria" disabled>
-                    Eliminar Categoria
-                </button>
-                <!-- Button Actualizar Categoria -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                    data-bs-target="#actualizarcategoria" disabled>
-                    Actualiza Categoria
-                </button>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 text-center">
                 <!-- Button Crear Cliente -->
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#crearcliente">
                     Crear Cliente
                 </button>
                 <!-- Button Eliminar Cliente -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#eliminarcliente" disabled>
+                <button type="button" class="btn btn-danger grs" data-bs-toggle="modal" data-bs-target="#eliminarcliente" disabled>
                     Eliminar Cliente
                 </button>
                 <!-- Button Actualizar Cliente -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                <button type="button" class="btn btn-success grs" data-bs-toggle="modal"
                     data-bs-target="#actualizarcliente" disabled>
                     Actualiza Cliente
                 </button>
@@ -56,33 +46,33 @@
             <br>
             <br>
             <br>
-            <div class="col-md-6">
+            <div class="col-md-6 text-center">
                 <!-- Button Crear Auditorio -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#crearauditorio">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#crearauditorio" onclick="getCtgAudi()">
                     Crear Auditorio
                 </button>
                 <!-- Button Eliminar Auditorio -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                <button type="button" class="btn btn-danger grs" data-bs-toggle="modal"
                     data-bs-target="#eliminarauditorio" disabled>
                     Eliminar Auditorio
                 </button>
                 <!-- Button Actualizar Auditorio -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                <button type="button" class="btn btn-success grs" data-bs-toggle="modal"
                     data-bs-target="#actualizarauditorio" disabled>
                     Actualiza Auditorio
                 </button>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 text-center">
                 <!-- Button Crear Mensaje -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#crearmensaje">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#crearmensaje" onclick="setMsnCliente(),clickbtn()">
                     Crear Mensaje
                 </button>
                 <!-- Button Eliminar Mensaje -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#eliminarmensaje" disabled>
+                <button type="button" class="btn btn-danger grs" data-bs-toggle="modal" data-bs-target="#eliminarmensaje" disabled>
                     Eliminar Mensaje
                 </button>
                 <!-- Button Actualizar Mensaje -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                <button type="button" class="btn btn-success grs" data-bs-toggle="modal"
                     data-bs-target="#actualizarmensaje" disabled>
                     Actualiza Mensaje
                 </button>
@@ -99,6 +89,9 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
+                                <div class="mb-3" style="display: none;">
+                                    <input type="text" class="form-control" id="idctg" >
+                                </div>
                                 <div class="mb-3">
                                     <label for="exampleFormControlInput1" class="form-label">Nombre</label>
                                     <input type="text" class="form-control" id="nombrectga" required>
@@ -112,26 +105,6 @@
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                                 <button type="button" class="btn btn-primary" onclick="saveCategory()">Save
                                     changes</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Modal Eliminar Categoria-->
-                <div class="modal fade" id="eliminarcategoria" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Eliminar Categoria</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                ...
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
                             </div>
                         </div>
                     </div>
@@ -167,6 +140,9 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
+                                <div class="mb-3" style="display: none;">
+                                    <input type="email" class="form-control" id="idcliente" >
+                                </div>
                                 <div class="mb-3">
                                     <label for="exampleFormControlInput1" class="form-label">Email</label>
                                     <input type="email" class="form-control" id="emailcliente">
@@ -243,6 +219,10 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
+
+                                <div class="mb-3" style="display: none;">
+                                    <input type="text" class="form-control" id="idauditorio">
+                                </div>
                                 <div class="mb-3">
                                     <label for="exampleFormControlInput1" class="form-label">Nombre</label>
                                     <input type="email" class="form-control" id="nameauditorio">
@@ -261,8 +241,7 @@
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleFormControlTextarea1" class="form-label">Categoria</label>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option id="retornarbackcategoria">1</option>
+                                    <select class="form-select" aria-label="Default select example" id="retornaDataCategoria">
                                     </select>
                                 </div>
                             </div>
@@ -324,20 +303,21 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
+                                <div class="mb-3" style="display: none;">
+                                    <input type="text" class="form-control" id="idmensaje">
+                                </div>
                                 <div class="mb-3">
                                     <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
                                     <textarea class="form-control" id="mensajemsn" rows="3"></textarea>
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleFormControlTextarea1" class="form-label">Cliente</label>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option id="mensajecli">1</option>
+                                    <select class="form-select" aria-label="Default select example" id="retornaDataCliente">                               
                                     </select>
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleFormControlTextarea1" class="form-label">Auditorio</label>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option id="mensajeaudi">1</option>
+                                    <select class="form-select" aria-label="Default select example" id="retornaDataAuditorio">
                                     </select>
                                 </div>
                             </div>
@@ -393,22 +373,22 @@
         <br>
         <br>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12 text-center">
                 <!-- Button Obtener Cliente -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#obtenercliente" onclick="getCliente()">
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#obtenercliente" onclick="getCliente()">
                     Obtener Cliente
                 </button>
                 <!-- Button Obtener Auditorio -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#obtenerauditorio" onclick="getAuditorio()">
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#obtenerauditorio" onclick="getAuditorio()">
                     Obtener Auditorio
                 </button>
                 <!-- Button Obtener Mensaje -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                     data-bs-target="#obtenermensaje" onclick="getMensajeFinal()">
                     Obtener Mensaje
                 </button>
                 <!-- Button Obtener Categoria -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                     data-bs-target="#obtenercategoria" onclick="getCategory()">
                     Obtener Categoria
                 </button>
@@ -433,7 +413,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-8" style="margin: auto;">
+            <div class="col-md-12" style="margin: auto;">
             <table class="table" id="Auditorio">
                 <thead>
                   <tr>
@@ -441,7 +421,8 @@
                     <th scope="col">Name</th>
                     <th scope="col">Owner</th>
                     <th scope="col">Capacity</th>
-                    <th scope="col">description</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Category</th>
                     <th scope="col">Accion</th>
                   </tr>
                 </thead>
@@ -469,7 +450,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-8" style="margin: auto;">
+            <div class="col-md-6" style="margin: auto;">
             <table class="table" id="Mensaje">
                 <thead>
                   <tr>
@@ -485,20 +466,10 @@
         </div>
     </div>
 
-
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-
     <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
+
     <script src="category.js"></script>
     <script src="cliente.js"></script>
     <script src="auditorio.js"></script>
