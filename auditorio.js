@@ -1,10 +1,10 @@
 /**
  * endpont de audience
  */
-//const endpointadiencia = "http://localhost:8080/api/Audience"
-const endpointadiencia = "http://150.230.77.129:8080/api/Audience"
-//const endpointctg = "http://localhost:8080/api/Category"
-const endpointctg = "http://150.230.77.129:8080/api/Category"
+const endpointadiencia = "http://localhost:8080/api/Audience"
+//const endpointadiencia = "http://150.230.77.129:8080/api/Audience"
+const endpointctg = "http://localhost:8080/api/Category"
+//const endpointctg = "http://150.230.77.129:8080/api/Category"
 
 let opcionD = true;
 let banderaF = true;
@@ -110,6 +110,7 @@ function getAuditorio(){
     $("#Auditorio").show();
     $("#Cliente").hide();
     $("#Mensaje").hide();
+    $("#Reservas").hide();
 
 }
 

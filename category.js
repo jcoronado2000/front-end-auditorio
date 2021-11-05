@@ -1,5 +1,5 @@
-//const endpointcategory = "http://localhost:8080/api/Category"
-const endpointcategory = "http://150.230.77.129:8080/api/Category"
+  const endpointcategory = "http://localhost:8080/api/Category"
+//const endpointcategory = "http://150.230.77.129:8080/api/Category"
 
 let banderaPutPost = true;
 
@@ -110,6 +110,7 @@ function getCategory(){
     $("#Auditorio").hide();
     $("#Cliente").hide();
     $("#Mensaje").hide();
+    $("#Reservas").hide();
 
 }
 
@@ -147,13 +148,3 @@ function deltecategory(respuesta) {
 
 $(".table").hide();
 
-
-//EN PRUEBAS PARA RETO 4//
-$("#escoger").on("click", function(event){
-    //let idseleccionado = $(this).find("td:first-child").html();   
-    alert("Hola mundo");
-});
-
-$("#escoger").click(function(event){
-    alert("Hola mundo");
-});

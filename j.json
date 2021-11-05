@@ -1,0 +1,92 @@
+[
+    {
+        "total": 3,
+        "client": {
+            "idClient": 1,
+            "email": "agustin@gmail.com",
+            "password": "agustin123",
+            "name": "Agustin Parra",
+            "age": 18,
+            "messages": [],
+            "reservations": [
+                {
+                    "idReservation": 1,
+                    "startDate": "2020-12-20T00:00:00.000+00:00",
+                    "devolutionDate": "2020-12-20T00:00:00.000+00:00",
+                    "status": "cancelled",
+                    "audience": {
+                        "id": 1,
+                        "name": "Aula magna",
+                        "owner": "Usa",
+                        "capacity": 450,
+                        "description": "Aula magna",
+                        "category": None,
+                        "messages": []
+                    },
+                    "score": None
+                },
+                {
+                    "idReservation": 2,
+                    "startDate": "2020-12-24T00:00:00.000+00:00",
+                    "devolutionDate": "2020-12-25T00:00:00.000+00:00",
+                    "status": "completed",
+                    "audience": {
+                        "id": 1,
+                        "name": "Aula magna",
+                        "owner": "Usa",
+                        "capacity": 450,
+                        "description": "Aula magna",
+                        "category": None,
+                        "messages": []
+                    },
+                    "score": None
+                },
+                {
+                    "idReservation": 4,
+                    "startDate": "2020-04-22T00:00:00.000+00:00",
+                    "devolutionDate": "2020-09-27T00:00:00.000+00:00",
+                    "status": "completed",
+                    "audience": {
+                        "id": 1,
+                        "name": "Aula magna",
+                        "owner": "Usa",
+                        "capacity": 450,
+                        "description": "Aula magna",
+                        "category": None,
+                        "messages": []
+                    },
+                    "score": None
+                }
+            ]
+        }
+    },
+    {
+        "total": 1,
+        "client": {
+            "idClient": 2,
+            "email": "adeodato@gmail.com",
+            "password": "adeodato123",
+            "name": "Adeodato Sanchez",
+            "age": 15,
+            "messages": [],
+            "reservations": [
+                {
+                    "idReservation": 3,
+                    "startDate": "2021-04-22T00:00:00.000+00:00",
+                    "devolutionDate": "2021-05-25T00:00:00.000+00:00",
+                    "status": "completed",
+                    "audience": {
+                        "id": 1,
+                        "name": "Aula magna",
+                        "owner": "Usa",
+                        "capacity": 450,
+                        "description": "Aula magna",
+                        "category": None,
+                        "messages": []
+                    },
+                    "score": None
+                }
+            ]
+        }
+    }
+]
