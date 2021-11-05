@@ -1,5 +1,5 @@
-  const endpointcategory = "http://localhost:8080/api/Category"
-//const endpointcategory = "http://150.230.77.129:8080/api/Category"
+//const endpointcategory = "http://localhost:8080/api/Category"
+const endpointcategory = "http://150.230.77.129:8080/api/Category"
 
 let banderaPutPost = true;
 

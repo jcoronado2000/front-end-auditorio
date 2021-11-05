@@ -1,8 +1,8 @@
 /**
  * endpoint reservas
  */
-const endpointreservas = "http://localhost:8080/api/Reservation"
-
+//const endpointreservas = "http://localhost:8080/api/Reservation"
+const endpointreservas = "http://150.230.77.129:8080/api/Reservation"
 
 function jsonReservas(){
     const data = {

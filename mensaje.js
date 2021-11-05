@@ -2,8 +2,8 @@
  * endpoint de mensaje
  */
 
-const endpointmensaje = "http://localhost:8080/api/Message"
-//const endpointmensaje = "http://150.230.77.129:8080/api/Message"
+//const endpointmensaje = "http://localhost:8080/api/Message"
+const endpointmensaje = "http://150.230.77.129:8080/api/Message"
 
 let banderaM = true;
 
